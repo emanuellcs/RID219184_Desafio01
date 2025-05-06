@@ -1,0 +1,161 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    background-color: #303030;
+    padding: 103px 0px 100px 45px
+}
+
+#tituloCabecalho {
+    color: #FFFFFF;
+    font-size: 60px;
+}
+
+#subtituloCabecalho {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+#paginaDados {
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.dado {
+    margin: 0;
+}
+
+.numero {
+    margin-bottom: 0;
+}
+
+.textoDado {
+    margin-top: 0;
+}
+
+#descricaoImagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+}
+
+img {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-right: 50px;
+}
+
+#tituloDescricao {
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+#textoDescricao {
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+#formulario {
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#tituloFormulario {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-top: 70px;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+input {
+    margin: 30px;
+    height: 60px;
+    width: 450px;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+}
+
+::placeholder {
+    opacity: 0.5;
+    font-family: "Raleway", sans-serif;
+}
+
+button {
+    background-color: #C07212;
+    color: #FFFFFF;
+    margin: 50px;
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-size: 27.5px;
+    font-weight: bold;
+    transition: background-color 300ms ease;
+}
+
+button:hover {
+    background-color: #c072128c;
+}
+
+@media only screen and (max-width: 768px) {
+    #cabecalho {
+        padding: 50px 20px;
+    }
+
+    #tituloCabecalho {
+        font-size: 40px;
+    }
+
+    #paginaDados {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dado {
+        margin-bottom: 30px;
+    }
+
+    #descricaoImagem {
+        flex-direction: column;
+    }
+
+    #descricao {
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    button {
+        width: 80%;
+        margin: 30px auto;
+    }
+}
